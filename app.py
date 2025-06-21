@@ -60,7 +60,7 @@ if st.button("Generate 5 Samples"):
     for idx, col in enumerate(cols):
         img_arr = samples[idx].squeeze().numpy()
         img = Image.fromarray(img_arr, mode="L")
-        col.image(img, caption=f"Digit {selected_digit}", use_column_width=True)
+        col.image(img, caption=f"Digit {selected_digit}", use_container_width=True)
 
 # requirements.txt
 # torch
